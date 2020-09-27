@@ -1,0 +1,295 @@
+:root
+  --black: #000
+  --white: #ffffff
+  --black-bg: #050007
+  --off-black: #646464
+  --purp: #0b0012
+  --youtube: #ff0000
+  --twitch: #6441a4
+  --roll20: #ed008c
+  --instagram: #f10176
+  --twitter: #00acee
+  --patreon: #ff424d
+  --facebook: #3b5998
+  --home: #464646
+  --about: #02228d
+  --faq: #038b27
+  --wiki: #95006f
+  --contact: #c70c00
+  --charity: #fff6a4
+  --store: #ffd502
+  font-size: 16px
+
+.social-links
+  padding: 15px 0
+  display: flex
+  justify-content: space-evenly
+  flex-wrap: wrap
+  @media (min-width: 992px)
+    justify-content: flex-end
+  a
+    font-size: 40px
+    z-index: 2
+    text-align: center
+    width: 25%
+    margin-bottom: 20px
+    @media (min-width: 992px)
+      font-size: 30px
+      margin-bottom: 0
+      position: absolute
+      width: auto
+    i
+      transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out
+    &:hover,&:active,&:focus
+      i
+        color: var(--white) !important
+  .youtube
+    @media (min-width: 992px)
+      right: 1082px
+      top: 14px
+    .fa-youtube
+      color: var(--youtube)
+
+  .wiki-header
+    @media (min-width: 992px)
+      right: 885px
+      top: 6px
+    .fa-wikipedia-w
+      color: var(--white)
+      padding: 1px
+      border-radius: 10px
+
+    &:hover,&:active,&:focus
+      .fa-wikipedia-w
+        color: darken(#fff, 30%) !important
+
+  .twitch
+    @media (min-width: 992px)
+      right: 715px
+      top: 12px
+    .fa-twitch
+      color: var(--twitch)
+
+  .roll20
+    @media (min-width: 992px)
+      right: 568px
+      top: 8px
+    .fa-dice-d20
+      color: var(--roll20)
+
+  .patreon
+    @media (min-width: 992px)
+      right: 380px
+      top: 16px
+    .fa-patreon
+      color: var(--patreon)
+
+  .twitter
+    @media (min-width: 992px)
+      right: 246px
+      top: 10px
+    .fa-twitter
+      color: var(--twitter)
+      @media (min-width: 992px)
+        color: var(--purp)
+
+  .instagram
+    @media (min-width: 992px)
+      right: 196px
+      top: 20px
+    .fa-instagram
+      color: var(--instagram)
+
+  .facebook
+    @media (min-width: 992px)
+      right: 98px
+      top: 10px
+    .fa-facebook-square
+      color: var(--facebook)
+      @media (min-width: 992px)
+        color: var(--purp)
+
+.hero-logo
+  width: 100%
+  max-width: 600px
+  margin: 0 auto
+  display: block
+  @media (min-width: 992px)
+    display: none
+
+main
+  background-size: contain
+  background-color: var(--black)
+  background-position: center top
+  background-repeat: no-repeat
+  background-color: var(--black)
+  position: relative
+  padding-bottom: 100px
+  @media (min-width: 992px)
+    padding-bottom: 0
+    height: 1430px
+    background-image: url(../img/main-bg-min.jpg)
+  @media screen and ( min-width: 1921px )
+    background-size: cover
+
+.cta-links ul
+  list-style: none
+  padding: 0
+  margin: 0
+  position: relative
+  display: flex
+  flex-direction: column
+  max-width: 305px
+  width: 100%
+  margin: 0 auto
+  margin-top: 100px
+  @media (min-width: 992px)
+    display: block
+    max-width: unset
+    margin-top: 0
+  @media (min-width: 1530px)
+    margin-top: 50px
+.cta
+  display: inline-block
+  margin-bottom: 30px
+  @media (min-width: 992px)
+    position: absolute
+  & a
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-radius: 50%
+    background-color: transparent
+    transition: all 0.8s ease-in-out
+    @media (min-width: 992px)
+      display: inline-block
+    img
+      width: 100px
+      @media (min-width: 992px)
+        width: auto
+
+    div
+      color: #fff
+      display: inline-block
+      font-family: do hyeon
+      font-size: 2em
+      width: 4.5em
+      background-color: var(--black)
+      text-align: center
+      transition: opacity 1s ease-in-out
+      left: 0px
+      top: 1em
+      @media (min-width: 992px)
+        position: absolute
+        opacity: 0
+        border-radius: 10px
+        border: 1px solid red
+        font-size: 1.25em
+    &:hover, &active, &focus
+      box-shadow: none
+      animation: none
+      div
+        opacity: 1
+
+.home
+  @media (min-width: 992px)
+    z-index: 20
+    top: 200px
+    left: 41px
+    a
+      box-shadow: 0 0 4px 2px var(--white), 0 0 6px 8px var(--home)
+      animation: glow 3s infinite alternate
+    @keyframes glow
+      100%
+        box-shadow: 0 0 6px 4px vvar(--white), 0 0 4px 4px var(--home)
+
+.about
+  @media (min-width: 992px)
+    z-index: 19
+    top: 385px
+    left: 46px
+    a
+      box-shadow: 0 0 5px 2px var(--white), 0 0 6px 8px var(--about)
+      animation: glow 3s infinite alternate
+    @keyframes glow
+      100%
+        box-shadow: 0 0 6px 4px var(--white), 0 0 4px 4px var(--about)
+
+.faq
+  @media (min-width: 992px)
+    z-index: 18
+    top: 431px
+    left: 141px
+    a
+      box-shadow: 0 0 5px 2px #fff, 0 0 6px 8px var(--faq)
+      animation: glow 2.5s infinite alternate
+    @keyframes glow
+      100%
+        box-shadow: 0 0 6px 4px var(--white), 0 0 4px 4px var(--faq)
+
+.wiki
+  @media (min-width: 992px)
+    z-index: 17
+    top: 432px
+    left: 280px
+    a
+      box-shadow: 0 0 5px 2px #fff, 0 0 6px 8px var(--wiki)
+      animation: glow 3.5s infinite alternate
+    @keyframes glow
+      100%
+        box-shadow: 0 0 6px 4px var(--white), 0 0 4px 4px var(--wiki)
+
+.contact
+  @media (min-width: 992px)
+    z-index: 16
+    top: 511px
+    left: 393px
+    a
+      box-shadow: 0 0 5px 2px #fff, 0 0 6px 8px var(--contact)
+      animation: glow 2.25s infinite alternate
+    @keyframes glow
+      100%
+        box-shadow: 0 0 6px 4px var(--contact), 0 0 4px 4px var(--contact)
+
+.charity
+  @media (min-width: 992px)
+    z-index: 15
+    top: 633px
+    left: 373px
+    a
+      box-shadow: 0 0 5px 2px #fff, 0 0 6px 8px var(--charity)
+      animation: glow 2.75s infinite alternate
+    @keyframes glow
+      100%
+        box-shadow: 0 0 6px 4px var(--white), 0 0 4px 4px var(--charity)
+
+.store
+  @media (min-width: 992px)
+    z-index: 14
+    top: 916px
+    left: 273px
+    a
+      box-shadow: 0 0 5px 2px #fff, 0 0 6px 8px var(--store)
+      animation: glow 3.25s infinite alternate
+    @keyframes glow
+      100%
+        box-shadow: 0 0 6px 4px var(--white), 0 0 4px 4px var(--store)
+
+#formBtn
+  color: var(--white)
+  font-family: 'do hyeon'
+  text-decoration: none
+  transition: color 0.5s ease-in-out
+  @media ( max-width:  991px)
+    font-size: 3em
+    display: block
+    text-align: center
+  @media (min-width: 992px)
+    font-size: 2em
+    top: 1295px
+    left: 1510px
+    position: absolute
+  @media (min-width: 1199px)
+    font-size: 3em
+  &:hover,&:active,&:focus
+    color: var(--youtube)
