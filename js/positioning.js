@@ -8,24 +8,14 @@ const twitter = document.querySelector('.twitter');
 const instagram = document.querySelector('.instagram');
 const facebook = document.querySelector('.facebook');
 
-// main top constants
-const youtubeTop = 0.0073;
-const wiki_headerTop = 0.0031;
-const twitchTop = 0.0063;
-const roll20Top = 0.0031;
-const patreonTop = 0.0083;
-const twitterTop = 0.0052;
-const instagramTop = 0.0052;
-const facebookTop = 0.0052;
-
 // social right constants
-const youtubeRight = 0.564;
-const wiki_headerRight = 0.461;
-const twitchRight = 0.372;
-const roll20Right = 0.296;
-const patreonRight = 0.198;
-const twitterRight = 0.128;
-const instagramRight = 0.102;
+const youtubeRight = 0.476;
+const wiki_headerRight = 0.376;
+const twitchRight = 0.301;
+const roll20Right = 0.241;
+const patreonRight = 0.160;
+const twitterRight = 0.111;
+const instagramRight = 0.094;
 const facebookRight = 0.051;
 
 //=================main ctas===============
@@ -66,28 +56,13 @@ const scale = 0.00052;
 window.addEventListener('load', function () {
   let screenSize = window.innerWidth;
   if (screenSize > 991) {
-    youtube.style.top = `${screenSize * youtubeTop}px`;
     youtube.style.right = `${screenSize * youtubeRight}px`;
-
-    wiki_header.style.top = `${screenSize * wiki_headerTop}px`;
     wiki_header.style.right = `${screenSize * wiki_headerRight}px`;
-
-    twitch.style.top = `${screenSize * twitchTop}px`;
     twitch.style.right = `${screenSize * twitchRight}px`;
-
-    roll20.style.top = `${screenSize * roll20Top}px`;
     roll20.style.right = `${screenSize * roll20Right}px`;
-
-    patreon.style.top = `${screenSize * patreonTop}px`;
     patreon.style.right = `${screenSize * patreonRight}px`;
-
-    twitter.style.top = `${screenSize * twitterTop}px`;
     twitter.style.right = `${screenSize * twitterRight}px`;
-
-    instagram.style.top = `${screenSize * instagramTop}px`;
     instagram.style.right = `${screenSize * instagramRight}px`;
-
-    facebook.style.top = `${screenSize * facebookTop}px`;
     facebook.style.right = `${screenSize * facebookRight}px`;
 
     home.style.top = `${screenSize * homeTop}px`;
@@ -135,28 +110,13 @@ window.addEventListener('resize', function () {
   let screenSize = window.innerWidth;
 
   if (screenSize > 991) {
-    youtube.style.top = `${screenSize * youtubeTop}px`;
     youtube.style.right = `${screenSize * youtubeRight}px`;
-
-    wiki_header.style.top = `${screenSize * wiki_headerTop}px`;
     wiki_header.style.right = `${screenSize * wiki_headerRight}px`;
-
-    twitch.style.top = `${screenSize * twitchTop}px`;
     twitch.style.right = `${screenSize * twitchRight}px`;
-
-    roll20.style.top = `${screenSize * roll20Top}px`;
     roll20.style.right = `${screenSize * roll20Right}px`;
-
-    patreon.style.top = `${screenSize * patreonTop}px`;
     patreon.style.right = `${screenSize * patreonRight}px`;
-
-    twitter.style.top = `${screenSize * twitterTop}px`;
     twitter.style.right = `${screenSize * twitterRight}px`;
-
-    instagram.style.top = `${screenSize * instagramTop}px`;
     instagram.style.right = `${screenSize * instagramRight}px`;
-
-    facebook.style.top = `${screenSize * facebookTop}px`;
     facebook.style.right = `${screenSize * facebookRight}px`;
 
     home.style.top = `${screenSize * homeTop}px`;
