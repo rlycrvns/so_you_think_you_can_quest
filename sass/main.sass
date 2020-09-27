@@ -20,6 +20,8 @@
   --store: #ffd502
   font-size: 16px
 
+header
+  background-color: var(--black)
 .social-links
   padding: 15px 0
   display: flex
@@ -36,7 +38,7 @@
     @media (min-width: 992px)
       font-size: 30px
       margin-bottom: 0
-      position: absolute
+      position: relative
       width: auto
     i
       transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out
@@ -45,15 +47,13 @@
         color: var(--white) !important
   .youtube
     @media (min-width: 992px)
-      right: 1082px
-      top: 14px
+      right: 914px
     .fa-youtube
       color: var(--youtube)
 
   .wiki-header
     @media (min-width: 992px)
-      right: 885px
-      top: 6px
+      right: 721px
     .fa-wikipedia-w
       color: var(--white)
       padding: 1px
@@ -65,49 +65,39 @@
 
   .twitch
     @media (min-width: 992px)
-      right: 715px
-      top: 12px
+      right: 578px
     .fa-twitch
       color: var(--twitch)
 
   .roll20
     @media (min-width: 992px)
-      right: 568px
-      top: 8px
+      right: 463px
     .fa-dice-d20
       color: var(--roll20)
 
   .patreon
     @media (min-width: 992px)
-      right: 380px
-      top: 16px
+      right: 308px
     .fa-patreon
       color: var(--patreon)
 
   .twitter
     @media (min-width: 992px)
-      right: 246px
-      top: 10px
+      right: 213px
     .fa-twitter
       color: var(--twitter)
-      @media (min-width: 992px)
-        color: var(--purp)
 
   .instagram
     @media (min-width: 992px)
-      right: 196px
-      top: 20px
+      right: 180px
     .fa-instagram
       color: var(--instagram)
 
   .facebook
     @media (min-width: 992px)
       right: 98px
-      top: 10px
     .fa-facebook-square
       color: var(--facebook)
-      @media (min-width: 992px)
-        color: var(--purp)
 
 .hero-logo
   width: 100%
@@ -147,8 +137,9 @@ main
     display: block
     max-width: unset
     margin-top: 0
+    top: 30px
   @media (min-width: 1530px)
-    margin-top: 50px
+    top: 90px
 .cta
   display: inline-block
   margin-bottom: 30px
@@ -279,7 +270,7 @@ main
   color: var(--white)
   font-family: 'do hyeon'
   text-decoration: none
-  transition: color 0.5s ease-in-out
+
   @media ( max-width:  991px)
     font-size: 3em
     display: block
@@ -289,6 +280,15 @@ main
     top: 1295px
     left: 1510px
     position: absolute
+    background: black
+    border-radius: 20px
+    padding: 3px
+    transition: color 0.5s ease-in-out
+    box-shadow: 0 0 5px 2px #fff, 0 0 6px 8px var(--contact)
+    animation: glow 2.25s infinite alternate
+  @keyframes glow
+    100%
+      box-shadow: 0 0 6px 4px var(--contact), 0 0 4px 4px var(--contact)
   @media (min-width: 1199px)
     font-size: 3em
   &:hover,&:active,&:focus
